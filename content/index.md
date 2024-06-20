@@ -4,7 +4,7 @@
 
 Web Technology Design, Dev & Consultancy
 
-## **Web Technology Expert**
+## Web Technology Expert
 
 Helping small to medium businesses optimise their customer engagment and experience using the latest web technologies and best practices.
 
