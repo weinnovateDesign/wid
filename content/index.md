@@ -1,9 +1,19 @@
-# Nuxt Content
+#
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
+# WeInnovate.Design
 
-Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[...slug].vue` component.
+Web Technology Design, Dev & Consultancy
 
----
+## **Web Technology Expert**
 
-Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
+Helping small to medium businesses optimise their customer engagment and experience using the latest web technologies and best practices.
+
+### Web Design, Development and Consultancy services based in Adelaide
+
+- Website Design and Development
+- MarTech Onboarding, Implementation and Integration
+- Saas Product Strategy - UI/UX, Onboarding, Research & Content Marketing
+- Google Adwords Management, Optimisation and Reporting
+- Customised SEO service
+
+Email at contact\[at]weinnovate.design
