@@ -1,42 +1,13 @@
-# Content v2 Minimal Starter
+# weinnovate.design
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+Static site for weinnovate Design — landing page, privacy policy, and terms of service.
 
-## Setup
+No build step. Deploy = push to main (Cloudflare Pages serves the repo root).
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
+index.html            Landing
+privacy/index.html    Privacy Policy
+terms/index.html      Terms of Service
+assets/logo.png       Brand logo
+favicon.png           Favicon
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
