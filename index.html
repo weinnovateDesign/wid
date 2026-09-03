@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>weinnovate Design — Web Technology Design, Development & Consultancy</title>
-  <meta name="description" content="Web design, development and consultancy services based in Adelaide. Helping small to medium businesses optimise customer engagement using the latest web technologies.">
+  <title>SEOApp by weinnovate Design — SEO Reporting & Analytics Automation</title>
+  <meta name="description" content="SEOApp connects to Google Analytics, Search Console, and Google Ads to generate automated SEO reports and marketing insights for websites managed by weinnovate Design.">
   <link rel="canonical" href="https://weinnovate.design/">
   <link rel="icon" type="image/png" href="/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://weinnovate.design/">
-  <meta property="og:title" content="weinnovate Design — Web Technology Design, Development & Consultancy">
-  <meta property="og:description" content="Web design, development and consultancy services based in Adelaide.">
+  <meta property="og:title" content="SEOApp by weinnovate Design — SEO Reporting & Analytics Automation">
+  <meta property="og:description" content="Automated SEO reporting connecting Google Analytics, Search Console, and Google Ads.">
   <meta property="og:image" content="https://weinnovate.design/assets/logo.png">
   <style>
     :root {
@@ -19,6 +19,7 @@
       --muted: #666666;
       --accent: #1a56db;
       --border: #e5e5e5;
+      --panel: #f8f9fb;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -28,42 +29,39 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-    }
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 48px 24px;
-    }
-    .logo { width: 120px; height: 120px; margin-bottom: 32px; }
-    h1 {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-    h1 .dot { color: var(--accent); }
-    .tagline {
-      margin-top: 12px;
-      font-size: 16px;
-      color: var(--muted);
-      max-width: 480px;
       line-height: 1.6;
     }
-    .sub {
-      margin-top: 24px;
-      font-size: 14px;
-      color: var(--muted);
-      max-width: 520px;
-      line-height: 1.7;
+    .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 40px; flex: 1; }
+    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 40px; }
+    .brand img { width: 56px; height: 56px; }
+    .brand .name { font-weight: 700; font-size: 15px; letter-spacing: 1px; }
+    .brand .dot { color: var(--accent); }
+    .brand .by { font-size: 12px; color: var(--muted); }
+    h1 { font-size: 30px; line-height: 1.25; margin-bottom: 14px; }
+    .lead { font-size: 16px; color: #333; max-width: 620px; margin-bottom: 36px; }
+    h2 { font-size: 18px; margin: 36px 0 12px; }
+    .features { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 18px;
     }
-    .contact {
-      margin-top: 32px;
-      font-size: 14px;
-      color: var(--ink);
+    .card h3 { font-size: 14.5px; margin-bottom: 6px; }
+    .card p { font-size: 13.5px; color: var(--muted); }
+    .data-use {
+      border-left: 3px solid var(--accent);
+      background: var(--panel);
+      padding: 18px 20px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 12px;
     }
+    .data-use p, .data-use li { font-size: 14px; color: #333; }
+    .data-use ul { padding-left: 20px; margin-top: 8px; }
+    .data-use li { margin-bottom: 6px; }
+    .privacy-note { margin-top: 28px; font-size: 14px; }
+    .privacy-note a { color: var(--accent); }
+    .contact { margin-top: 8px; font-size: 14px; }
     .contact a { color: var(--accent); text-decoration: none; }
     footer {
       border-top: 1px solid var(--border);
@@ -75,20 +73,61 @@
     }
     footer a { color: var(--muted); text-decoration: none; }
     footer a:hover { color: var(--accent); }
-    @media (max-width: 420px) {
-      h1 { font-size: 22px; }
-      .logo { width: 96px; height: 96px; }
+    @media (max-width: 560px) {
+      .features { grid-template-columns: 1fr; }
+      h1 { font-size: 24px; }
     }
   </style>
 </head>
 <body>
-  <main>
-    <img class="logo" src="/assets/logo.png" alt="weinnovate Design logo">
-    <h1>weinnovate<span class="dot">.</span>design</h1>
-    <p class="tagline">Web Technology Design, Development &amp; Consultancy</p>
-    <p class="sub">Helping small to medium businesses optimise their customer engagement and experience using the latest web technologies and best practices. Based in Adelaide, South Australia.</p>
-    <p class="contact">Email: <a href="mailto:contact@weinnovate.design">contact@weinnovate.design</a></p>
-  </main>
+  <div class="wrap">
+    <div class="brand">
+      <img src="/assets/logo.png" alt="weinnovate Design logo">
+      <div>
+        <div class="name">weinnovate<span class="dot">.</span>design</div>
+        <div class="by">SEOApp — SEO reporting &amp; analytics automation</div>
+      </div>
+    </div>
+
+    <h1>Automated SEO reporting, powered by your own Google data</h1>
+    <p class="lead">SEOApp is a reporting and analytics tool built and operated by weinnovate Design, a web technology consultancy based in Adelaide, South Australia. It connects to Google services you authorise and turns raw marketing data into clear, consolidated SEO reports for the websites we manage.</p>
+
+    <h2>What SEOApp does</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Analytics reporting</h3>
+        <p>Reads website traffic data from Google Analytics (GA4) — sessions, users, conversions, channels — and compiles monthly performance reports.</p>
+      </div>
+      <div class="card">
+        <h3>Search performance</h3>
+        <p>Reads Google Search Console data — queries, clicks, impressions, rankings — to track organic search visibility over time.</p>
+      </div>
+      <div class="card">
+        <h3>Ads performance</h3>
+        <p>Reads Google Ads campaign data — spend, clicks, conversions, keywords — to report on paid search performance alongside organic results.</p>
+      </div>
+      <div class="card">
+        <h3>Consolidated dashboards</h3>
+        <p>Combines all sources into a single HTML, PDF, or spreadsheet report per website or client — delivered by email or a private report portal.</p>
+      </div>
+    </div>
+
+    <h2>How SEOApp uses your data</h2>
+    <div class="data-use">
+      <p>SEOApp requests access to Google user data solely to provide its reporting functionality:</p>
+      <ul>
+        <li><strong>Google Analytics &amp; Search Console (read-only):</strong> to retrieve traffic and search performance metrics for report generation.</li>
+        <li><strong>Google Ads:</strong> to retrieve campaign performance data for reporting, and — only where explicitly authorised by the account owner — to apply requested campaign optimisations.</li>
+        <li><strong>Gmail (send):</strong> to deliver generated reports by email on your behalf.</li>
+      </ul>
+      <p style="margin-top:10px;">Data is used only for these purposes. It is never sold, never shared with third parties, and never used for advertising. See our <a href="/privacy/">Privacy Policy</a> for full details, including our adherence to the Google API Services User Data Policy and its Limited Use requirements.</p>
+    </div>
+
+    <p class="privacy-note"><strong>Privacy Policy:</strong> <a href="https://weinnovate.design/privacy/">https://weinnovate.design/privacy/</a><br>
+    <strong>Terms of Service:</strong> <a href="https://weinnovate.design/terms/">https://weinnovate.design/terms/</a></p>
+    <p class="contact">Contact: <a href="mailto:contact@weinnovate.design">contact@weinnovate.design</a></p>
+  </div>
+
   <footer>
     <a href="/privacy/">Privacy Policy</a>
     <a href="/terms/">Terms of Service</a>
